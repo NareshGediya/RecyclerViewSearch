@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Name "
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="12dp"
+        android:text="Name: "
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="nareshgediya@gmail "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nm"
+        app:layout_constraintStart_toEndOf="@+id/em"
+        app:layout_constraintTop_toTopOf="@+id/nm" />
+
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="Email: "
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nm"
+        app:layout_constraintTop_toBottomOf="@+id/nm" />
+
+    <TextView
+        android:id="@+id/tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:text="nareshgediya@gmail "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/em"
+        app:layout_constraintStart_toEndOf="@+id/em"
+        app:layout_constraintTop_toTopOf="@+id/em" />
+
+    <TextView
+        android:id="@+id/cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/white"
+        android:text="Country: "
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/em" />
+
+    <TextView
+        android:id="@+id/tCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nareshgediya@gmail "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/cn"
+        app:layout_constraintStart_toStartOf="@+id/tEmail"
+        app:layout_constraintTop_toTopOf="@+id/cn" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="DOB: "
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cn" />
+
+    <TextView
+        android:id="@+id/tDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nareshgediya@gmail "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dob"
+        app:layout_constraintStart_toStartOf="@+id/tEmail"
+        app:layout_constraintTop_toTopOf="@+id/dob" />
+
+    <TextView
+        android:id="@+id/cout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="12dp"
+        android:text="Gender: "
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio_button_1"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="@+id/cout"
+        app:layout_constraintStart_toStartOf="@+id/tDob"
+        app:layout_constraintTop_toTopOf="@+id/cout">
+
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Male"
+            android:clickable="false"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Female"
+            android:clickable="false"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/hob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+        android:text="Hobbies: "
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cout"
+        app:layout_constraintTop_toBottomOf="@+id/cout" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Play Games"
+        android:clickable="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/hob"
+        app:layout_constraintTop_toTopOf="@+id/hob" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Movies"
+        android:layout_marginStart="5dp"
+        android:clickable="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2"
+        android:layout_marginLeft="5dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:clickable="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading"
+        android:clickable="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
